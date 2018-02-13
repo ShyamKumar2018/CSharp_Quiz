@@ -1,13 +1,21 @@
-﻿namespace Quiz_Beginners
+﻿namespace SYMC.GLOBALIZATION.LOCALIZATION
 {
-    class CSharpBasics
+    class CSharpBasic
     {
-
         /// <summary>
         /// Write a program and ask the user to enter the width and height of an image. Then tell if the image 
         /// is landscape or portrait.
         /// </summary>
-        /// 
+            static void Main();
+            {
+            console.WriteLine("\nEnter the Width and Height of image :"); // Diplay Request
+            var width = Console.ReadLine(); //Read Input from user
+            var height = Console.ReadLine();    
+            Console.WriteLine("\nImage is Landscape."); //Print image format
+            }
+    }
+ }
+    
 
 
 
@@ -18,9 +26,25 @@
         /// and display it as 5! = 120.
         /// </summary>
         /// 
-
-
-
+namespace SYMC.GLOBALIZATION.LOCALIZATION
+{
+    class CSharpBasic2
+        {
+        static void Main(string[] args);
+        {
+            int a, num, fact;
+            Console.WriteLine("\nEnter a Number :");
+             num = int.Parse(Console.ReadLine()); // get a number as an integer
+             fact = num; // assigning fact to num
+             for (i = num - 1; i >= 1; i--)  // loop to execute the process
+             {
+                fact = fact * i; // Factorial operation
+             }
+             Console.WriteLine("\nFactorial of Given Number is: "+fact); //Print Factorial
+             Console.ReadLine();
+        }
+    }
+}
 
         /// <summary>
         /// Ask the user to enter their name. Use an array to reverse the name and then store the result in a new string. 
@@ -28,7 +52,21 @@
         /// </summary>
         /// 
 
-
+namespace SYMC.GLOBALIZATION.LOCALIZATION
+{
+    class CSharpBasic3
+        {
+        static void Main();
+        {
+        Console.WriteLine("/nEnter your name : ");
+        String[] ar = Console.ReadLine();
+        Array.Reverse(ar);
+        String[] arnew = ar;
+        Console.WriteLine("Reversed name is: ", +arnew);
+        Console.ReadLine();
+        }
+    }
+}
 
         /// <summary>
         /// Write a program and ask the user to enter a few numbers separated by a hyphen. Work out 
